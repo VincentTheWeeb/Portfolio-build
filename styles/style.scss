@@ -1,0 +1,168 @@
+@import 'config';
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+body {
+  background-color: $primary-background;
+  min-height: 100vh;
+}
+
+input {
+  font-size: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default styles for mobile devices */
+.nav-bar {
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.9);
+  mix-blend-mode: normal;
+  opacity: 0.99;
+  backdrop-filter: blur(5.01238px);
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8dvh;
+  min-width: 100vw;
+  background: rgba(30, 30, 30, 0.8);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(8px);
+  padding: 0rem 7rem;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  color: $title;
+  font-size: $huge-heading;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+
+h2,
+h3 {
+  color: $text;
+  font-size: $huge-sub-heading;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h4 {
+  color: $title;
+  font-size: $huge-sub-heading;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+
+h5 {
+  margin-bottom: 1rem;
+}
+
+h6 {
+  color: $title;
+  font-size: 7rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100dvh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: $text;
+  background-color: $primary-background;
+  color: $text;
+  font-size: $normal;
+  width: 100%;
+  padding-bottom: 0.8rem;
+  margin-bottom: 40px;
+
+  &:focus {
+    outline: 0;
+    border-width: 0 0 4px;
+    border-color: $title;
+    font-size: $medium;
+    background-color: $primary-background;
+  }
+
+  &::placeholder {
+    color: $text;
+    background-color: $primary-background;
+  }
+}
+
+hr {
+  display: none;
+}
+
+input:last-child {
+  margin-bottom: 8rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  background-color: $title;
+}
+.none {
+  display: none;
+}
+@import 'utilities';
+@import 'buttons';
+@import 'case-study';
+@import 'mobile';
