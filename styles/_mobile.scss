@@ -53,7 +53,7 @@
 
   .hero {
     justify-content: space-around;
-    height: 100dvh;
+    height: 90dvh;
 
     .social-container {
       width: 80%;
@@ -93,6 +93,16 @@
     width: 100%;
   }
 
+  .article-carousel-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 2.5rem;
+    padding: 0rem 1.5rem;
+    justify-content: unset;
+  }
+
   .article-container {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -119,6 +129,12 @@
     }
   }
 
+  .article-carousel-card {
+    flex-shrink: 0;
+    min-width: 30rem;
+    scroll-snap-align: center;
+  }
+
   .article-card {
     flex-shrink: 0;
     max-width: 300px;
@@ -132,17 +148,14 @@
 
   .projects {
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     height: 90vh;
 
     header {
-      margin: 8rem 0rem;
+      padding: 4rem 0;
     }
-    .article-container {
+    .article-carousel-container {
       min-height: auto;
-    }
-    article {
-      min-width: auto;
     }
   }
 
@@ -168,15 +181,28 @@
   }
 
   .contact {
-    height: 60vh;
-
     .article-divider {
+      justify-content: space-evenly;
       margin-bottom: 0rem;
       height: 100%;
     }
 
     article {
       width: 100%;
+    }
+
+    .contact-form {
+      flex: 2;
+
+      form {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+
+        input {
+          width: 100%;
+        }
+      }
     }
   }
 

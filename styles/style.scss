@@ -10,12 +10,13 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 body {
   background-color: $primary-background;
   min-height: 100vh;
+  padding-top: 8dvh;
 }
 
 input {
@@ -29,25 +30,13 @@ main {
 }
 
 /* Default styles for mobile devices */
-.nav-bar {
-  position: fixed;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(30, 30, 30, 0.9);
-  mix-blend-mode: normal;
-  opacity: 0.99;
-  backdrop-filter: blur(5.01238px);
-}
 nav {
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 8dvh;
   min-width: 100vw;
-  background: rgba(30, 30, 30, 0.8);
+  background: rgba(29, 29, 29, 0.8);
   mix-blend-mode: normal;
   backdrop-filter: blur(8px);
   padding: 0rem 7rem;
@@ -80,6 +69,7 @@ h4 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
+  padding: 4rem 0;
 }
 
 h5 {
@@ -100,6 +90,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 2000px;
   height: 100dvh;
 }
 
@@ -162,7 +153,14 @@ footer {
 .none {
   display: none;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
 @import 'utilities';
+@import 'carousel';
 @import 'buttons';
 @import 'case-study';
 @import 'mobile';

@@ -13,7 +13,7 @@
   color: $text;
   text-decoration: none;
   letter-spacing: 3px;
-  font-size: 14px;
+  font-size: $normal;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   padding-bottom: 10px;
@@ -28,19 +28,21 @@
 /* Hero section */
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60% auto auto auto;
+  justify-items: center;
   align-items: center;
-  padding-top: 8rem;
-  height: 100%;
+  height: 95%;
 
   button {
     border: 3px solid $highlight;
     background-color: $primary-background;
-    font-size: 2rem;
+    font-size: $medium;
     padding: 1rem 2.5rem;
     color: $text;
+    flex: 1;
+    max-width: 500px;
 
     &:hover {
       background-color: $highlight;
@@ -49,10 +51,12 @@
 
   .social-container {
     width: 20%;
+    flex: 2;
   }
 
   header {
     justify-content: space-evenly;
+    flex: 4;
   }
 }
 
@@ -89,8 +93,7 @@
   flex-direction: column;
   background: $secondary-background;
   transition: 0.3s;
-  max-width: 300px;
-  height: 40rem;
+  width: 300px;
   /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
   border-radius: 5px;
 
@@ -128,11 +131,7 @@
   background-color: $secondary-background;
   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  height: 100%;
-
-  header {
-    margin-top: 4rem;
-  }
+  height: 95%;
 
   article {
     display: flex;
@@ -156,8 +155,6 @@
 }
 
 .projects {
-  height: 100%;
-
   .article-container {
     padding: 4rem 0rem;
   }
@@ -227,7 +224,7 @@
   }
 
   img {
-    width: 70%;
+    width: 50%;
   }
 }
 
@@ -237,7 +234,7 @@
   height: 8vh;
 }
 .contact {
-  height: 100%;
+  height: 80dvh;
   .article-divider {
     flex-direction: column;
     align-items: center;
@@ -261,4 +258,12 @@
 
 .remove-height-10 {
   height: 95%;
+}
+
+.adjust-padding {
+  padding-top: 8dvh;
+}
+
+.cover {
+  object-fit: cover;
 }
