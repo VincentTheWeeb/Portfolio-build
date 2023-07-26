@@ -62,7 +62,8 @@
             <h2>FRONT-END DEVELOPER</h2>
             <h2>UI DESIGNER</h2>
           </header>
-          <button>GET CONNECTED</button>
+          <a href="#section-5"><button>GET CONNECTED</button></a>
+
           <div class="social-container">
             <img src="images/icons/github-white.png" alt="" />
             <img src="images/icons/linkedin-white.png" alt="" />
@@ -130,7 +131,7 @@
         </div>
       </section>
       <!-- Expertise section -->
-      <section id="section-3" class="expand adjust-padding">
+      <section id="section-3" class="expand adjust-padding remove-height-10">
         <div class="large-card">
           <header>
             <h4>EXPERTISE</h4>
@@ -181,7 +182,7 @@
         </div>
       </section>
       <!-- About section -->
-      <section id="section-4" class="expand adjust-padding">
+      <section id="section-4" class="expand adjust-padding remove-height-10">
         <div class="large-card">
           <header>
             <h4>ABOUT</h4>
@@ -231,11 +232,17 @@
                 action="https://getform.io/f/7cdfb61e-f7ac-4acb-8089-18e3dfc12b7a"
                 method="post"
               >
-                <input name="name" type="text" placeholder="Your first name" />
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="*Your full name"
+                  required
+                />
                 <input
                   name="email"
                   type="email"
-                  placeholder="Your email adress"
+                  placeholder="*Your email adress"
+                  required
                 />
                 <input
                   name="message"

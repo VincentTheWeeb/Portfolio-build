@@ -1,0 +1,26 @@
+/* Navigtation */
+.logo {
+  max-width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: $text;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: $normal;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+
+  &:hover {
+    border-bottom: 3px solid $highlight;
+  }
+}
+
+/* Navigtation End*/

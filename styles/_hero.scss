@@ -1,0 +1,39 @@
+/* Hero section */
+
+.hero {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60% auto auto auto;
+  justify-items: center;
+  align-items: center;
+  height: 95%;
+
+  button {
+    border: 3px solid $highlight;
+    background-color: $primary-background;
+    font-size: $medium;
+    padding: 1rem 2.5rem;
+    color: $text;
+    flex: 1;
+    max-width: 500px;
+
+    &:hover {
+      background-color: $highlight;
+    }
+  }
+
+  .social-container {
+    width: 20%;
+    flex: 2;
+  }
+
+  header {
+    justify-content: space-evenly;
+    flex: 4;
+  }
+}
+
+.hero span {
+  color: $text;
+  font-size: $normal;
+}

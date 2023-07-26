@@ -73,7 +73,7 @@ h4 {
 }
 
 h5 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h6 {
@@ -90,7 +90,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 90%;
-  max-width: 2000px;
+  max-width: 1500px;
   height: 100dvh;
 }
 
@@ -159,6 +159,10 @@ footer {
   top: 0;
   z-index: 10;
 }
+
+@import 'nav';
+@import 'hero';
+@import 'large-card';
 @import 'utilities';
 @import 'carousel';
 @import 'buttons';
