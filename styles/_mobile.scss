@@ -57,6 +57,10 @@
     .social-container {
       width: 80%;
     }
+
+    button {
+      font-size: 2rem;
+    }
   }
 
   /* Navigtation */
@@ -114,6 +118,14 @@
     -webkit-overflow-scrolling: touch;
     gap: 2.5rem;
     padding: 0rem 1.5rem;
+  }
+
+  .article-content {
+    .big-red {
+      font-size: 2rem;
+      color: #e31c25;
+      font-weight: bold;
+    }
   }
 
   .article-divider {

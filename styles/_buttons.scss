@@ -21,7 +21,7 @@ button {
 
 .article-card-btn {
   background-color: $secondary-background;
-  border: solid 4px $text;
+  border: solid 4px $highlight;
   padding: 1.5rem 2rem;
   font-family: 'Montserrat', sans-serif;
   color: $text;
@@ -29,6 +29,7 @@ button {
   width: 100%;
   text-transform: uppercase;
   margin: 20px 0 0 0;
+  border-radius: 30px;
 
   &:hover {
     border-color: $highlight;
@@ -47,6 +48,7 @@ button {
   max-width: 500px;
   text-transform: uppercase;
   margin-top: 4rem;
+  border-radius: 30px;
 
   &:hover {
     background-color: $highlight;
