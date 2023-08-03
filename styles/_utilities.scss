@@ -3,23 +3,50 @@
   color: $text;
 }
 
-.card-excerpt {
-  font-size: $normal;
+.big-red {
+  font-size: $xtra-large;
+  color: $highlight;
+  font-weight: bold;
+}
+
+.big-text {
+  font-size: $large;
   color: $text;
-  flex: 2;
 }
 
-.projects {
-  .article-container {
-    padding: 4rem 0rem;
-  }
+.card-excerpt {
+  font-size: $medium;
+  color: $text;
+  height: 175px;
 }
 
-.about {
-  height: 100%;
-  .card-title {
-    margin-bottom: 4rem;
-  }
+.article-divider {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  gap: 4rem;
+  padding-top: 6%;
+}
+
+.card-title {
+  color: $highlight;
+}
+
+.black-bar {
+  width: 100vw;
+  height: 8vh;
+}
+
+.remove-height-10 {
+  height: 95%;
+}
+
+.adjust-padding {
+  padding-top: 8dvh;
+}
+
+.cover {
+  object-fit: cover;
 }
 
 .social-container {
@@ -34,89 +61,14 @@
   }
 }
 
-.article-divider {
+.hero-wrap {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 4rem;
-
-  article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 4rem 9rem;
-    width: 50%;
-    height: 50rem;
-
-    .social-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-      flex: 2;
-
-      img {
-        width: 2rem;
-        max-height: 2rem;
-        margin: 0rem 2rem;
-      }
-    }
-  }
-
-  article:first-child {
-    border-right: 1px solid #f2f2f2;
-  }
-
-  .card-title {
-    color: $highlight;
-  }
-
-  p {
-    max-width: 40rem;
-  }
-
-  img {
-    width: 50%;
-  }
-}
-/* Contact */
-.black-bar {
-  width: 100vw;
-  height: 8vh;
-}
-.contact {
-  height: 80dvh;
-  .article-divider {
-    flex-direction: column;
-    align-items: center;
-    header {
-      margin: 0;
-      padding-top: 0;
-    }
-
-    article {
-      align-items: center;
-    }
-    article:first-child {
-      border-right: none;
-    }
-  }
-}
-
-.contact-form {
-  min-width: 45%;
-}
-
-.remove-height-10 {
-  height: 95%;
-}
-
-.adjust-padding {
-  padding-top: 8dvh;
-}
-
-.cover {
-  object-fit: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  background-color: #757575;
+  background-image: url('/images/ocean-bkgr.JPG');
+  background-size: cover;
+  background-blend-mode: multiply;
 }

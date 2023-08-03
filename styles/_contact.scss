@@ -1,0 +1,33 @@
+#contact {
+  display: grid;
+  grid-template-rows: auto;
+  height: 70dvh;
+
+  div {
+    display: grid;
+    grid-template-rows: auto 2fr;
+    justify-items: center;
+  }
+
+  .article-divider {
+    display: grid;
+    grid-template-rows: auto 3fr;
+    header {
+      margin: 0;
+      padding-top: 0;
+    }
+
+    article {
+      align-items: center;
+    }
+    article:first-child {
+      border-right: none;
+    }
+  }
+}
+
+.contact-form {
+  display: flex;
+  justify-items: center;
+  min-width: 45%;
+}

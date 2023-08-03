@@ -1,24 +1,27 @@
 /* Hero section */
 
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 60% auto auto auto;
+  grid-template-rows: 65% auto auto;
   justify-items: center;
   align-items: center;
-  height: 95%;
+  padding-top: 10rem;
+  height: 90dvh;
 
   button {
-    border: 3px solid $highlight;
-    background-color: $primary-background;
+    border: none;
+    background-color: #e31c25;
     font-size: $medium;
     padding: 1rem 2.5rem;
     color: $text;
-    flex: 1;
     max-width: 500px;
+    border-radius: 30px;
 
     &:hover {
-      background-color: $highlight;
+      background-color: $text;
+      color: $highlight;
     }
   }
 
@@ -30,6 +33,10 @@
   header {
     justify-content: space-evenly;
     flex: 4;
+  }
+
+  a {
+    padding: 1rem 2rem;
   }
 }
 

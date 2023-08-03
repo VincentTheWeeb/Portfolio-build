@@ -55,88 +55,96 @@
 
     <main>
       <!-- Hero section -->
-      <section>
-        <div class="hero">
-          <header>
-            <h1>VINCE VILLANUEVA</h1>
-            <h2>FRONT-END DEVELOPER</h2>
-            <h2>UI DESIGNER</h2>
-          </header>
-          <a href="#section-5"><button>GET CONNECTED</button></a>
+      <div class="hero-wrap">
+        <section>
+          <div class="hero">
+            <header>
+              <h1>VINCE VILLANUEVA</h1>
+              <h2>FRONT-END DEVELOPER</h2>
+              <h2>UI DESIGNER</h2>
+            </header>
+            <a href="#section-5"><button>CONNECT</button></a>
 
-          <div class="social-container">
-            <img src="images/icons/github-white.png" alt="" />
-            <img src="images/icons/linkedin-white.png" alt="" />
-            <img src="images/icons/twitter-white.png" alt="" />
+            <!-- <div class="social-container">
+              <img src="images/icons/github-white.png" alt="" />
+              <img src="images/icons/linkedin-white.png" alt="" />
+              <img src="images/icons/twitter-white.png" alt="" />
+            </div> -->
+            <span class="more-info"> Scroll down for more info </span>
           </div>
-          <span class="more-info"> Scroll down for more info </span>
-        </div>
-      </section>
+        </section>
+      </div>
       <!-- Projects section -->
-      <section id="section-2" class="expand adjust-padding remove-height-10">
+      <section id="section-2" class="expand adjust-padding">
         <div class="projects">
           <header>
             <h4>PROJECTS</h4>
           </header>
           <div class="article-carousel-container">
             <article class="article-carousel-card">
-              <img
-                class="article-img"
-                src="images/jn-pic.png"
-                alt="a thumbnail of the redesigned Digital Seat Media Website."
-              />
-              <div class="article-content">
-                <h5 class="card-title">Links Page</h5>
-                <p class="card-excerpt">
-                  This was my first freelance site I made for a client wanting
-                  to provide links with owner ship of the site.
-                </p>
-                <button
-                  class="article-card-btn"
-                  onclick="location.href='project.html'"
-                >
-                  View details
-                </button>
-              </div>
+              <div class="card-img card-1"></div>
+
+              <h5 class="card-title">Links Page</h5>
+              <p class="card-excerpt">
+                This was my first freelance site I made for a client wanting to
+                provide links with owner ship of the site.
+              </p>
+              <button
+                class="article-card-btn"
+                onclick="location.href='project.html'"
+              >
+                View details
+              </button>
             </article>
             <article class="article-carousel-card">
-              <img
-                class="article-img"
-                src="images/DS_IMAGE.png"
-                alt="a thumbnail of the redesigned Digital Seat Media Website."
-              />
-              <div class="article-content">
-                <h5 class="card-title">Digital Seat Home page</h5>
-                <p class="card-excerpt">
-                  This is a redesign of the Digital Seat Media home page.
-                </p>
-                <button class="article-card-btn">View details</button>
-              </div>
+              <div class="card-img card-2"></div>
+
+              <h5 class="card-title">Links Page</h5>
+              <p class="card-excerpt">
+                This was my first freelance site I made for a client wanting to
+                provide links with owner ship of the site.
+              </p>
+              <button
+                class="article-card-btn"
+                onclick="location.href='project.html'"
+              >
+                View details
+              </button>
             </article>
             <article class="article-carousel-card">
-              <img
-                class="article-img"
-                src="images/DS_IMAGE.png"
-                alt="a thumbnail of the redesigned Digital Seat Media Website."
-              />
-              <div class="article-content">
-                <h5 class="card-title">Digital Seat Home page</h5>
-                <p class="card-excerpt">
-                  This is a redesign of the Digital Seat Media home page.
-                </p>
-                <button class="article-card-btn">View details</button>
-              </div>
+              <div class="card-img card-3"></div>
+
+              <h5 class="card-title">Vinny Says</h5>
+              <p class="card-excerpt">
+                This is a Simon Says game I made when I first learned
+                Javascript. I named it after my self hence the name " Vinny
+                Says"
+              </p>
+              <button
+                class="article-card-btn"
+                onclick="location.href='project.html'"
+              >
+                View details
+              </button>
             </article>
+          </div>
+          <div>
+            <p class="big-red">Warning:</p>
+            <p class="big-text">
+              Viewing my projects may cause uncontrollable "Oooo's", spontaneous
+              "Ahhhh's", and a sudden urge to hire me immediately. Proceed with
+              caution!
+            </p>
           </div>
         </div>
       </section>
       <!-- Expertise section -->
-      <section id="section-3" class="expand adjust-padding remove-height-10">
+      <section id="section-3" class="expand adjust-padding">
         <div class="large-card">
           <header>
             <h4>EXPERTISE</h4>
           </header>
-          <div class="article-divider">
+          <div id="expertise" class="article-divider">
             <article>
               <div class="article-content">
                 <h5 class="card-title">FRONT-END DEVELOPER</h5>
@@ -158,7 +166,7 @@
                 <p class="card-excerpt">VS Code, Codepen, Github</p>
               </div>
             </article>
-            <hr />
+
             <article>
               <div class="article-content">
                 <h5 class="card-title">UI DESINER</h5>
@@ -182,37 +190,41 @@
         </div>
       </section>
       <!-- About section -->
-      <section id="section-4" class="expand adjust-padding remove-height-10">
+      <section id="section-4" class="expand adjust-padding">
         <div class="large-card">
           <header>
             <h4>ABOUT</h4>
           </header>
-          <div class="article-divider">
+          <div id="about">
+            <article class="profile-photo">
+              <div class="article-content">
+                <img
+                  class="article-img"
+                  src="images/vincev.jpg"
+                  alt="A profile photo of myself."
+                />
+              </div>
+            </article>
             <article>
               <div class="article-content">
-                <h5 class="card-title">Hello, I'm Vince</h5>
-                <p class="card-excerpt">
+                <p class="big-red">Hello, I'm Vince.</p>
+                <p class="big-text">
                   I'm not deceased, I promise. I just really wanted to stick
                   with the black & white color scheme for my photo.
                 </p>
-                <p class="card-excerpt">
+
+                <p class="big-text">
+                  I'm from Dallas Tx, born and raised. I love watching anime,
+                  playing MTG and I have a memory bank filled of movie quotes.
+                </p>
+                <!-- <p class="card-excerpt">
                   I'm from Dallas Tx, born and raised. I love watching anime,
                   playing MTG and I have a memory bank filled of movie quotes.
                 </p>
                 <p class="card-excerpt">
                   I believe if you love what you do you'll never work a day in
                   your life.
-                </p>
-              </div>
-            </article>
-            <hr />
-            <article class="profile-photo">
-              <div class="article-content">
-                <img
-                  class="article-img"
-                  src="images/new-vince.jpg"
-                  alt="A profile photo of myself."
-                />
+                </p> -->
               </div>
             </article>
           </div>
@@ -221,9 +233,9 @@
 
       <!-- Contact section -->
 
-      <section id="section-5" class="remove-height-10 adjust-padding">
-        <div class="contact">
-          <div class="article-divider">
+      <section id="section-5" class="adjust-padding">
+        <div id="contact">
+          <div class="">
             <header>
               <h4>CONNECT</h4>
             </header>

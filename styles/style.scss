@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 body {
@@ -23,9 +23,9 @@ input {
   font-size: 100%;
 }
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
   align-items: center;
 }
 
@@ -47,24 +47,23 @@ header {
 }
 
 h1 {
-  color: $title;
+  color: $text;
   font-size: $huge-heading;
-  text-align: center;
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px;
 }
 
 h2,
 h3 {
   color: $text;
   font-size: $huge-sub-heading;
-  text-align: center;
+  text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
 h4 {
-  color: $title;
+  color: #f2f2f2;
   font-size: $huge-sub-heading;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -87,11 +86,10 @@ h6 {
 }
 
 section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   width: 90%;
-  max-width: 1500px;
-  height: 100dvh;
+  max-width: 1600px;
 }
 
 form {
@@ -100,7 +98,8 @@ form {
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  height: 100%;
+  gap: 2rem;
+
   width: 100%;
 }
 
@@ -114,7 +113,7 @@ input {
   border-color: $text;
   background-color: $primary-background;
   color: $text;
-  font-size: $normal;
+  font-size: $large;
   width: 100%;
   padding-bottom: 0.8rem;
   margin-bottom: 40px;
@@ -123,7 +122,7 @@ input {
     outline: 0;
     border-width: 0 0 4px;
     border-color: $title;
-    font-size: $medium;
+    font-size: $large;
     background-color: $primary-background;
   }
 
@@ -167,4 +166,5 @@ footer {
 @import 'carousel';
 @import 'buttons';
 @import 'case-study';
+@import 'contact';
 @import 'mobile';
