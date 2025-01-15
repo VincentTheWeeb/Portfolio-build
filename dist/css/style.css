@@ -520,7 +520,6 @@ button {
 #contact {
   display: grid;
   grid-template-rows: auto;
-  height: 70dvh;
 }
 #contact div {
   display: grid;
