@@ -86,8 +86,6 @@ h6 {
 }
 
 section {
-  display: grid;
-  grid-template-columns: auto;
   width: 90%;
   max-width: 1600px;
 }
@@ -157,6 +155,11 @@ footer {
   position: fixed;
   top: 0;
   z-index: 10;
+}
+
+.set-grid {
+  display: grid;
+  grid-template-columns: auto;
 }
 
 @import 'nav';
